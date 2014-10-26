@@ -22,7 +22,7 @@
     </form>
 
 @elseif($classes>32)
-    <p>You cannout enter more than 32 classes. 
+    <p>You cannot enter more than 32 classes. 
         
 @else
     <form>
