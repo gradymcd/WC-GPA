@@ -25,10 +25,15 @@
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="http://www.edline.net/files/_VRL2H_/88854a15040648633745a49013852ec4/Credits_and_GPA1.pdf">Scale</a></li>
+                <li
+                    @if(Route::current()->getPath()=="scale")
+                        class="active"
+                    @endif
+                    ><a href="{{URL::to('/scale')}}">Scale</a>
+                </li>
+                
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://gradymcd.me">gradymcd</a></li>
                 <li><a href="https://github.com/gradymcd/WC-GPA">Source</a></li>
             </ul>
         </div>
@@ -44,7 +49,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-
                 <ul class="list-unstyled list-inline">
                 <li><a href="https://github.com/gradymcd">GitHub</a></li>
                 <li><a href="https://twitter.com/gradymcd">Twitter</a></li>
@@ -52,7 +56,7 @@
                 <li><a href="http://gradymcd.me">gradymcd</a></li>
                 <li><a href="mailto:gradyrmcd@gmail.com">Contact</a></li>
             </ul>
-            <p>This project is licensed under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+            <p>This project is licensed under the <a href="https://raw.githubusercontent.com/gradymcd/WC-GPA/master/LICENSE">MIT License</a>.</p>
 
             </div>
         </div>
