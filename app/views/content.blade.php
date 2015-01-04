@@ -34,8 +34,8 @@
                 <h4>Weight</h4>
             </div>
         </div>
-        @for($i=0; $i
-        <$classes; $i++) <div class="row">
+        @for($i=0; $i<$classes; $i++) 
+        <div class="row">
             <div class="col-lg-6">
                 <div class="input-group">
                     <span class="input-group-btn">
